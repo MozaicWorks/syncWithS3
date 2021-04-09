@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# No parameter required
+# pulls changes from the s3 remote defined in .s3 file
+# TO CHECK: does it overwrite files changed locally?
+# TO CHECK: does it delete files deleted on the remote?

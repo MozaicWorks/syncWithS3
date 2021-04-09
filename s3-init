@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Receive the full path to the s3 sync folder (the remote)
+# create a file .s3 containing this path
+# need to run it inside the main folder to sync. All subfolders will be automatically synced
