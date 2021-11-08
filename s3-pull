@@ -4,3 +4,7 @@
 # pulls changes from the s3 remote defined in .s3 file
 # TO CHECK: does it overwrite files changed locally?
 # TO CHECK: does it delete files deleted on the remote?
+
+CONFIG=.s3
+S3PATH=$(head -n 1 $CONFIG)
+aws s3 sync $S3PATH .

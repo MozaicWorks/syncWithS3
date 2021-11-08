@@ -3,3 +3,18 @@
 # Receive the full path to the s3 sync folder (the remote)
 # create a file .s3 containing this path
 # need to run it inside the main folder to sync. All subfolders will be automatically synced
+
+CONFIG=.s3
+S3PATH=$1
+
+
+if ! [ -z "$S3PATH" ]
+then
+     echo "Pass an s3 url as parameter"
+fi
+
+# Avoid overwriting existing file
+set -o noclobber
+
+# Write the S3 path to config file
+echo $S3PATH > $CONFIG
