@@ -8,6 +8,8 @@ This tool depends on the installation of `aws` command line tools. Check out the
 
 ## Usage
 
+!!!! **Warning: This tool is still under development. Use it at your own risk** !!!
+
 The tool consists of 3 scripts:
 
 * `s3-init s3url`: initializes the sync by storing the s3 URL passed as parameter into a file named .s3
