@@ -7,10 +7,10 @@
 CONFIG=.s3
 S3PATH=$1
 
-
-if ! [ -z "$S3PATH" ]
+if [ -z "$S3PATH" ]
 then
      echo "Pass an s3 url as parameter"
+	 exit
 fi
 
 # Avoid overwriting existing file
